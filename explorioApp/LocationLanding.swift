@@ -22,13 +22,6 @@ struct LocationLanding: View {
     @State private var expanded = true
     var body: some View {
         
-        /* TabView{
-            ViewOne()
-                .tabItem() {
-                    Image("Home")
-                }
-            */
-        
             //ScrollView{
                 NavigationStack {
                     VStack(alignment: .center) {
@@ -98,8 +91,6 @@ struct LocationLanding: View {
                 }
             }
         }
-    }
-    
     struct LocationLanding_Previews: PreviewProvider {
         static var previews: some View {
             LocationLanding()
