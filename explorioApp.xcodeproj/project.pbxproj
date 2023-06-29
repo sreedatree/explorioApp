@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD0B00122A4DDBD700C4205F /* LocationLanding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B000E2A4DDBD700C4205F /* LocationLanding4.swift */; };
-		BD0B00132A4DDBD700C4205F /* LocationLanding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B000F2A4DDBD700C4205F /* LocationLanding3.swift */; };
-		BD0B00142A4DDBD700C4205F /* LocationLanding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B00102A4DDBD700C4205F /* LocationLanding2.swift */; };
-		BD0B00152A4DDBD700C4205F /* LocationLanding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B00112A4DDBD700C4205F /* LocationLanding5.swift */; };
 		BD0B00172A4DDD6300C4205F /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B00162A4DDD6300C4205F /* homePage.swift */; };
 		BD6933BA2A4CB32500EE9812 /* explorioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6933B92A4CB32500EE9812 /* explorioAppApp.swift */; };
 		BD6933BC2A4CB32500EE9812 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6933BB2A4CB32500EE9812 /* ContentView.swift */; };
@@ -19,13 +15,13 @@
 		BD6933C82A4CB43700EE9812 /* login page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6933C72A4CB43700EE9812 /* login page.swift */; };
 		BD6933CC2A4CB49900EE9812 /* LocationLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6933CB2A4CB49900EE9812 /* LocationLanding.swift */; };
 		BD6933CE2A4CB4BD00EE9812 /* searchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6933CD2A4CB4BD00EE9812 /* searchPage.swift */; };
+		BDC59B0F2A4DEC070089CDE5 /* LocationLanding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC59B0E2A4DEC070089CDE5 /* LocationLanding2.swift */; };
+		BDC59B112A4DEC5A0089CDE5 /* LocationLanding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC59B102A4DEC5A0089CDE5 /* LocationLanding3.swift */; };
+		BDC59B132A4DEC750089CDE5 /* LocationLanding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC59B122A4DEC750089CDE5 /* LocationLanding4.swift */; };
+		BDC59B172A4DECA40089CDE5 /* LocationLanding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC59B162A4DECA40089CDE5 /* LocationLanding5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD0B000E2A4DDBD700C4205F /* LocationLanding4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationLanding4.swift; path = ../../temp/LocationLanding4.swift; sourceTree = "<group>"; };
-		BD0B000F2A4DDBD700C4205F /* LocationLanding3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationLanding3.swift; path = ../../temp/LocationLanding3.swift; sourceTree = "<group>"; };
-		BD0B00102A4DDBD700C4205F /* LocationLanding2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationLanding2.swift; path = ../../temp/LocationLanding2.swift; sourceTree = "<group>"; };
-		BD0B00112A4DDBD700C4205F /* LocationLanding5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationLanding5.swift; path = ../../temp/LocationLanding5.swift; sourceTree = "<group>"; };
 		BD0B00162A4DDD6300C4205F /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
 		BD6933B62A4CB32500EE9812 /* explorioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = explorioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6933B92A4CB32500EE9812 /* explorioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = explorioAppApp.swift; sourceTree = "<group>"; };
@@ -35,6 +31,10 @@
 		BD6933C72A4CB43700EE9812 /* login page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "login page.swift"; sourceTree = "<group>"; };
 		BD6933CB2A4CB49900EE9812 /* LocationLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLanding.swift; sourceTree = "<group>"; };
 		BD6933CD2A4CB4BD00EE9812 /* searchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchPage.swift; sourceTree = "<group>"; };
+		BDC59B0E2A4DEC070089CDE5 /* LocationLanding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLanding2.swift; sourceTree = "<group>"; };
+		BDC59B102A4DEC5A0089CDE5 /* LocationLanding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLanding3.swift; sourceTree = "<group>"; };
+		BDC59B122A4DEC750089CDE5 /* LocationLanding4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLanding4.swift; sourceTree = "<group>"; };
+		BDC59B162A4DECA40089CDE5 /* LocationLanding5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLanding5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +67,12 @@
 		BD6933B82A4CB32500EE9812 /* explorioApp */ = {
 			isa = PBXGroup;
 			children = (
+				BDC59B0E2A4DEC070089CDE5 /* LocationLanding2.swift */,
+				BDC59B102A4DEC5A0089CDE5 /* LocationLanding3.swift */,
+				BDC59B122A4DEC750089CDE5 /* LocationLanding4.swift */,
+				BDC59B162A4DECA40089CDE5 /* LocationLanding5.swift */,
 				BD6933CD2A4CB4BD00EE9812 /* searchPage.swift */,
 				BD6933CB2A4CB49900EE9812 /* LocationLanding.swift */,
-				BD0B00102A4DDBD700C4205F /* LocationLanding2.swift */,
-				BD0B000F2A4DDBD700C4205F /* LocationLanding3.swift */,
-				BD0B000E2A4DDBD700C4205F /* LocationLanding4.swift */,
-				BD0B00112A4DDBD700C4205F /* LocationLanding5.swift */,
 				BD6933B92A4CB32500EE9812 /* explorioAppApp.swift */,
 				BD6933BB2A4CB32500EE9812 /* ContentView.swift */,
 				BD6933C72A4CB43700EE9812 /* login page.swift */,
@@ -161,15 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0B00152A4DDBD700C4205F /* LocationLanding5.swift in Sources */,
-				BD0B00122A4DDBD700C4205F /* LocationLanding4.swift in Sources */,
+				BDC59B172A4DECA40089CDE5 /* LocationLanding5.swift in Sources */,
 				BD6933BC2A4CB32500EE9812 /* ContentView.swift in Sources */,
-				BD0B00132A4DDBD700C4205F /* LocationLanding3.swift in Sources */,
-				BD0B00142A4DDBD700C4205F /* LocationLanding2.swift in Sources */,
 				BD0B00172A4DDD6300C4205F /* homePage.swift in Sources */,
+				BDC59B112A4DEC5A0089CDE5 /* LocationLanding3.swift in Sources */,
 				BD6933C82A4CB43700EE9812 /* login page.swift in Sources */,
+				BDC59B0F2A4DEC070089CDE5 /* LocationLanding2.swift in Sources */,
 				BD6933BA2A4CB32500EE9812 /* explorioAppApp.swift in Sources */,
 				BD6933CC2A4CB49900EE9812 /* LocationLanding.swift in Sources */,
+				BDC59B132A4DEC750089CDE5 /* LocationLanding4.swift in Sources */,
 				BD6933CE2A4CB4BD00EE9812 /* searchPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
