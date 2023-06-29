@@ -22,6 +22,7 @@ struct LocationLanding: View {
     @State private var expanded = true
     var body: some View {
         ScrollView{
+            NavigationStack {
             VStack(alignment: .center) {
                 Text("**Welcome to**")
                     .font(.largeTitle)
@@ -69,14 +70,14 @@ struct LocationLanding: View {
                     }
                     .buttonStyle(GreenButtonStyle())
                     .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
-                    }
-                Group {
-                    NavigationLink(destination: LocationLanding2()) {
-                        Text("Randomize Location")
-                            .foregroundColor(Color.white)
-                            .frame(width: 200, height: 50)
-                            .background(Color(red: 0.375, green: 0.425, blue: 0.217))
-                            .cornerRadius(10)
+                }
+                
+                NavigationLink(destination: LocationLanding2()) {
+                    Text("Randomize Location")
+                        .foregroundColor(Color.white)
+                        .frame(width: 200, height: 50)
+                        .background(Color(red: 0.375, green: 0.425, blue: 0.217))
+                        .cornerRadius(10)
                     }
                 }
             }
