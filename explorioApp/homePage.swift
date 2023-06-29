@@ -1,8 +1,8 @@
 //
 //  homePage.swift
-//  explorio
+//  explorioApp
 //
-//  Created by Scholar on 6/27/23.
+//  Created by Scholar on 6/29/23.
 //
 
 import SwiftUI
@@ -44,15 +44,16 @@ struct homePage: View {
                 
             }
             /*
-            .toolbar {
-                ToolbarItemGroup(placement: .status) {
-                    NavigationLink(destination: ContentView()) {
-                    }
-                }
-            }
-            */
+             .toolbar {
+             ToolbarItemGroup(placement: .status) {
+             NavigationLink(destination: ContentView()) {
+             }
+             }
+             }
+             */
         }
     }
+    
     struct homePage_Previews: PreviewProvider {
         static var previews: some View {
             homePage()
