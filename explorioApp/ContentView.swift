@@ -19,7 +19,7 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                 
-                Image("explorioLogo")
+                Image("Logo")
                     .resizable()
                     .padding(.top)
                     .frame(width: 300.0, height: 300.0)
