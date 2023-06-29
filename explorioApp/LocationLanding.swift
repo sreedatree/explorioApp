@@ -23,70 +23,77 @@ struct LocationLanding: View {
     var body: some View {
         ScrollView{
             NavigationStack {
-            VStack(alignment: .center) {
-                Text("**Welcome to**")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
-                    .padding()
-                Text("Mumbai, India")
-                    .font(.title)
-                    .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
-                
-                Divider()
-                    .frame(width: 300, height: 1.5)
-                    .overlay(Color(red: 0.375, green: 0.425, blue: 0.217))
-                Spacer()
-                    .frame(height: 30)
-                
-                Group {
-                    DisclosureGroup("Things To Do") {
-                        Text("Content")
-                            .multilineTextAlignment(.center)
-                    }
-                    .buttonStyle(GreenButtonStyle())
-                    .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
+                VStack(alignment: .center) {
+                    Text("**Welcome to**")
+                        .font(.largeTitle)
+                        .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
+                        .padding()
+                    Text("Mumbai, India")
+                        .font(.title)
+                        .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                     
-                    DisclosureGroup("Weather") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
-                    }
-                    .buttonStyle(GreenButtonStyle())
-                    .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
+                    Divider()
+                        .frame(width: 300, height: 1.5)
+                        .overlay(Color(red: 0.375, green: 0.425, blue: 0.217))
+                    Spacer()
+                        .frame(height: 30)
                     
-                    
-                    DisclosureGroup("Food") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                    Group {
+                        DisclosureGroup("Things To Do") {
+                            Text("Content")
+                                .multilineTextAlignment(.center)
+                        }
+                        .buttonStyle(GreenButtonStyle())
+                        .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
+                        
+                        DisclosureGroup("Weather") {
+                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                        }
+                        .buttonStyle(GreenButtonStyle())
+                        .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
+                        
+                        
+                        DisclosureGroup("Food") {
+                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                        }
+                        .buttonStyle(GreenButtonStyle())
+                        .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
+                        
+                        DisclosureGroup("Stay") {
+                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                        }
+                        .buttonStyle(GreenButtonStyle())
+                        .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
+                        
+                        DisclosureGroup("Transportation") {
+                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                        }
+                        .buttonStyle(GreenButtonStyle())
+                        .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
                     }
-                    .buttonStyle(GreenButtonStyle())
-                    .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
                     
-                    DisclosureGroup("Stay") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                    NavigationLink(destination: LocationLanding2()) {
+                        Text("Randomize Location")
+                            .foregroundColor(Color.white)
+                            .frame(width: 200, height: 50)
+                            .background(Color(red: 0.375, green: 0.425, blue: 0.217))
+                            .cornerRadius(15)
                     }
-                    .buttonStyle(GreenButtonStyle())
-                    .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
-                    
-                    DisclosureGroup("Transportation") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
-                    }
-                    .buttonStyle(GreenButtonStyle())
-                    .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
-                }
-                
-                NavigationLink(destination: LocationLanding2()) {
-                    Text("Randomize Location")
-                        .foregroundColor(Color.white)
-                        .frame(width: 200, height: 50)
-                        .background(Color(red: 0.375, green: 0.425, blue: 0.217))
-                        .cornerRadius(10)
+                    NavigationLink(destination: searchPage()) {
+                        Text("Search Location")
+                            .foregroundColor(Color.white)
+                            .frame(width: 200, height: 50)
+                            .background(Color(red: 0.375, green: 0.425, blue: 0.217))
+                            .cornerRadius(15)
                     }
                 }
             }
         }
     }
-}
-
-struct LocationLanding_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationLanding()
+    
+    struct LocationLanding_Previews: PreviewProvider {
+        static var previews: some View {
+            LocationLanding()
+        }
     }
 }
