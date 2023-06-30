@@ -7,6 +7,9 @@ struct login_page: View {
     @State private var showSheet2 = false
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var username2: String = ""
+    @State private var password2: String = ""
+    @State private var password3: String = ""
     var body: some View {
         NavigationStack{
             VStack (alignment: .center){
@@ -37,14 +40,19 @@ struct login_page: View {
                                 Text("Continue as Guest")}
                             .frame(width: 250.0, height: 5.0)
                             .foregroundColor(Color(red: 0.38, green: 0.42, blue: 0.22))
+                            .padding(150)
                         }
                     }
                 }
                 }//end of vstack
                 HStack(alignment: .center){
-                    Text("--------------")
+                    Divider()
+                        .frame(width: 100, height: 1.5)
+                        .overlay(Color(red: 0.375, green: 0.425, blue: 0.217))
                     Text("or")
-                    Text("--------------")
+                    Divider()
+                        .frame(width: 100, height: 1.5)
+                        .overlay(Color(red: 0.375, green: 0.425, blue: 0.217))
                 }//end of hstack
                 .padding(.bottom, 30)
                 VStack{
@@ -82,21 +90,21 @@ struct login_page: View {
                             .cornerRadius(15)
                             .shadow(radius: 8)}
                             .padding(.bottom, 100)
-                            TextField("Create your Username", text: $username)
+                            TextField("Create your Username", text: $username2)
                                 .frame(width: 250.0, height: 55.0)
-                                .foregroundColor(Color.blue)
+                                .foregroundColor(Color(red: 0.74, green: 0.42, blue: 0.15))
                                 .border(Color(red: 0.38, green: 0.42, blue: 0.22))
                                 .multilineTextAlignment(TextAlignment .center)
                                 .padding(.bottom, 60)
-                            TextField("Create your Password", text: $password)
+                            TextField("Create your Password", text: $password2)
                             .frame(width: 250.0, height: 55.0)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color(red: 0.74, green: 0.42, blue: 0.15))
                             .multilineTextAlignment(TextAlignment .center)
                             .border(Color(red: 0.38, green: 0.42, blue: 0.22))
                             .padding(.bottom, 10)
-                            TextField("Confirm your Password", text: $password)
+                            TextField("Confirm your Password", text: $password3)
                             .frame(width: 250.0, height: 55.0)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color(red: 0.74, green: 0.42, blue: 0.15))
                             .multilineTextAlignment(TextAlignment .center)
                             .border(Color(red: 0.38, green: 0.42, blue: 0.22))
                             .padding(.bottom, 100)
@@ -131,13 +139,13 @@ struct login_page: View {
                     .padding(.bottom, 100)
                     TextField("Enter your Username", text: $username)
                         .frame(width: 250.0, height: 55.0)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color(red: 0.74, green: 0.42, blue: 0.15))
                         .border(Color(red: 0.38, green: 0.42, blue: 0.22))
                         .multilineTextAlignment(TextAlignment .center)
                         .padding(.bottom, 60)
                     TextField("Enter your Password", text: $password)
                     .frame(width: 250.0, height: 55.0)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color(red: 0.74, green: 0.42, blue: 0.15))
                     .multilineTextAlignment(TextAlignment .center)
                     .border(Color(red: 0.38, green: 0.42, blue: 0.22))
                     .padding(.bottom, 100)

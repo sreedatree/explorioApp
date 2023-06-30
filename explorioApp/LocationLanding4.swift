@@ -35,7 +35,7 @@ struct LocationLanding4: View {
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                         .padding()
-                    Text("Mexico City, Mexico")
+                    Text("Milan, Italy")
                         .font(.title)
                         .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                     
@@ -47,33 +47,57 @@ struct LocationLanding4: View {
                     
                     Group {
                         DisclosureGroup("Things To Do") {
-                            Text("Content")
-                                .multilineTextAlignment(.center)
+                            Text("")
+                            Link(destination: URL(string:"https://www.timeout.com/milan/things-to-do/best-things-to-do-in-milan")!){
+                                Image("milan1")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Weather") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.accuweather.com/en/it/milan/214046/weather-forecast/214046")!){
+                                Image("milan2")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         
                         DisclosureGroup("Food") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.eater.com/maps/best-milan-restaurants-38")!){
+                                Image("milan3")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Stay") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.booking.com/luxury/city/it/milan.html?aid=2049320&label=milan-Cp%2Aziio3zA1EP48MjJRirwS452425267906%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-807229581%3Alp9009741%3Ali%3Adec%3Adm&gclid=CjwKCAjw-vmkBhBMEiwAlrMeFw2LFaUeR3KCwBFU6aWU4Xg_AsXZDFxmHeiGHHGCkfCDdOX1vvcF6hoCEaAQAvD_BwE&keep_landing=1&sid=9efad455fa2b58e5b2b4ff620de06865")!){
+                                Image("milan4")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Transportation") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.timeout.com/milan/things-to-do/public-transportation-in-milan")!){
+                                Image("milan5")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
@@ -82,7 +106,7 @@ struct LocationLanding4: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    NavigationLink(destination: LocationLanding()) {
+                    NavigationLink(destination: LocationLanding3()) {
                         Text("Randomize Location")
                             .foregroundColor(Color.white)
                             .frame(width: 200, height: 50)

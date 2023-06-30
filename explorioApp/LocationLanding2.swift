@@ -35,7 +35,7 @@ struct LocationLanding2: View {
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                         .padding()
-                    Text("Mexico City, Mexico")
+                    Text("Miami, USA")
                         .font(.title)
                         .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                     
@@ -47,33 +47,57 @@ struct LocationLanding2: View {
                     
                     Group {
                         DisclosureGroup("Things To Do") {
-                            Text("Content")
-                                .multilineTextAlignment(.center)
+                            Text("")
+                            Link(destination: URL(string:"https://www.tripadvisor.com/Attractions-g34438-Activities-Miami_Florida.html")!){
+                                Image("miami1")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Weather") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string: "https://www.accuweather.com/en/us/miami/33128/weather-forecast/347936")!){
+                                Image("miami2")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         
                         DisclosureGroup("Food") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://miami.eater.com/22567378/best-miami-florida-restaurants-food-where-to-eat-guide")!){
+                                Image("miami3")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Stay") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.booking.com/placestostay/city/us/miami-beach.html")!){
+                                Image("miami4")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Transportation") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://miamivipvanservice.com/?gclid=CjwKCAjw-vmkBhBMEiwAlrMeF9srX06HIouMHhA1t0ekljn_e5dwtB4AI8FCQXKL29Mr0KOx4z3prRoC-YIQAvD_BwE")!){
+                                Image("miami5")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
@@ -82,7 +106,7 @@ struct LocationLanding2: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    NavigationLink(destination: LocationLanding()) {
+                    NavigationLink(destination: LocationLanding4()) {
                         Text("Randomize Location")
                             .foregroundColor(Color.white)
                             .frame(width: 200, height: 50)
