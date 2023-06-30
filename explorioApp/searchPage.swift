@@ -8,10 +8,33 @@
 import SwiftUI
 
 struct searchPage: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    let names = ["Mumbai, India", "Miami, USA", "Mexico City, Mexico", "Moscow, Russia"]
+        @State private var searchText = ""
+
+        var body: some View {
+            NavigationStack {
+                List {
+                    ForEach(searchResults, id: \.self) { name in
+                        NavigationLink {
+                            Text(name)
+                        } label: {
+                            Text(name)
+                        }
+                    }
+                }
+                .navigationTitle("Search Location")
+            }
+            .searchable(text: $searchText)
+        }
+
+        var searchResults: [String] {
+            if searchText.isEmpty {
+                return names
+            } else {
+                return names.filter { $0.contains(searchText) }
+            }
+        }
     }
-}
 
 struct searchPage_Previews: PreviewProvider {
     static var previews: some View {
