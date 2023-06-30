@@ -36,7 +36,7 @@ struct LocationLanding5: View {
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                         .padding()
-                    Text("Mexico City, Mexico")
+                    Text("Moscow, Russia")
                         .font(.title)
                         .foregroundColor(Color(red: 0.375, green: 0.425, blue: 0.217))
                     
@@ -48,33 +48,57 @@ struct LocationLanding5: View {
                     
                     Group {
                         DisclosureGroup("Things To Do") {
-                            Text("Content")
-                                .multilineTextAlignment(.center)
+                            Text("")
+                            Link(destination: URL(string:"https://www.tripadvisor.com/Attractions-g298484-Activities-Moscow_Central_Russia.html")!){
+                                Image("moscow1")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Weather") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.accuweather.com/en/ru/moscow/294021/weather-forecast/294021")!){
+                                Image("moscow2")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         
                         DisclosureGroup("Food") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://mindthetravel.com/10-russian-dishes-you-must-try/")!){
+                                Image("moscow3")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Stay") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://www.tripadvisor.com/Hotels-g298484-Moscow_Central_Russia-Hotels.html")!){
+                                Image("moscow4")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))
                         
                         DisclosureGroup("Transportation") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                            Text("")
+                            Link(destination: URL(string:"https://weheart.moscow/publictransport/")!){
+                                Image("moscow5")
+                                    .resizable(resizingMode: .stretch)
+                                    .frame(width: 250.0, height: 200.0)
+                                .multilineTextAlignment(.center)}
                         }
                         .buttonStyle(GreenButtonStyle())
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 1, trailing: 60))

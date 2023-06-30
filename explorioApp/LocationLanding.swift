@@ -41,6 +41,7 @@ struct LocationLanding: View {
                     
                     Group {
                         DisclosureGroup("Things To Do") {
+                            Text("")
                             Link(destination: URL(string: "https://www.lifestyleasia.com/ind/travel/india/things-to-do-in-mumbai/")!) {
                                 Image("mumbai1")
                                     .resizable()
@@ -54,6 +55,7 @@ struct LocationLanding: View {
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
                         
                         DisclosureGroup("Weather") {
+                            Text("")
                             Link(destination: URL(string: "https://www.accuweather.com/en/in/mumbai/204842/weather-radar/204842")!) {
                                 Image("mumbai7")
                                     .resizable()
@@ -64,6 +66,7 @@ struct LocationLanding: View {
                         
                         
                         DisclosureGroup("Food") {
+                            Text("")
                             Link(destination: URL(string: "https://www.gqindia.com/live-well/content/list-of-best-vegetarian-restaurants-in-mumbai-for-your-veg-cravings-in-the-maximum-city")!) {
                                 Image("mumbai3")
                                     .resizable()
@@ -77,6 +80,7 @@ struct LocationLanding: View {
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
                         
                         DisclosureGroup("Stay") {
+                            Text("")
                             Link(destination: URL(string: "https://www.thebrokebackpacker.com/where-to-stay-in-mumbai-india/")!) {
                                 Image("mumbai4")
                                     .resizable()
@@ -86,6 +90,7 @@ struct LocationLanding: View {
                         .padding(EdgeInsets(top: 10, leading: 60, bottom: 16, trailing: 60))
                         
                         DisclosureGroup("Transportation") {
+                            Text("")
                             Link(destination: URL(string: "https://www.tripsavvy.com/getting-around-mumbai-4846564")!) {
                                 Image("mumbai5")
                                     .resizable()
