@@ -27,7 +27,7 @@ struct ContentView: View {
                 
                 Text("Explorio randomizes a location and provides information necessary for your travel plans.")
                     .font(.system(size: 20))
-                    .multilineTextAlignment(.leading)
+                    .multilineTextAlignment(.center)
                     .padding(.top, 75.0)
                 Spacer()
                 
