@@ -23,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		BD0B00162A4DDD6300C4205F /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
+		BD5F5B162A4DFCC400494044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD6933B62A4CB32500EE9812 /* explorioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = explorioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6933B92A4CB32500EE9812 /* explorioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = explorioAppApp.swift; sourceTree = "<group>"; };
 		BD6933BB2A4CB32500EE9812 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		BD6933B82A4CB32500EE9812 /* explorioApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD5F5B162A4DFCC400494044 /* Info.plist */,
 				BDC59B0E2A4DEC070089CDE5 /* LocationLanding2.swift */,
 				BDC59B102A4DEC5A0089CDE5 /* LocationLanding3.swift */,
 				BDC59B122A4DEC750089CDE5 /* LocationLanding4.swift */,
@@ -301,6 +303,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"explorioApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = explorioApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "we need to access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +333,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"explorioApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = explorioApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "we need to access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

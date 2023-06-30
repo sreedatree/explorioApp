@@ -1,14 +1,16 @@
 /////https://accounts.google.com/v3/signin/identifier?dsh=S2097275425%3A1687976022955142&ifkv=AeDOFXgsKQHRm1o0O6q8qlI3HW54GoSqbobwMGaQ7T6U7YeWWOSF4Zk5bqlQbEMKn6-91tATouEYog&flowName=GlifWebSignIn&flowEntry=ServiceLogin
 import SwiftUI
 struct login_page: View {
+    @State var isImagePickerShowing = false
     @State private var showSheet = false
     @State private var showSheet2 = false
     @State private var username: String = ""
+    @State private var password: String = ""
     var body: some View {
         NavigationStack{
             VStack (alignment: .center){
                 Image("star")
-                    .padding(.bottom, 45.0)
+                    .padding(60)
                 VStack(alignment: .center){
                     Button("Login"){
                         self.showSheet = true
@@ -28,10 +30,14 @@ struct login_page: View {
                     .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
                     .shadow(radius: 10)
                     .padding(2)
-                    NavigationLink(destination: homePage()) {
-                        Text("Continue as Guest")}
-                    .frame(width: 250.0, height: 55.0)
-                    .foregroundColor(Color(red: 0.38, green: 0.42, blue: 0.22))
+                    NavigationView {
+                        VStack{
+                            NavigationLink(destination: homePage()) {
+                                Text("Continue as Guest")}
+                            .frame(width: 250.0, height: 5.0)
+                            .foregroundColor(Color(red: 0.38, green: 0.42, blue: 0.22))
+                        }
+                    }
                 }
                 }//end of vstack
                 HStack(alignment: .center){
@@ -63,43 +69,94 @@ struct login_page: View {
                 
 
                     .sheet(isPresented: $showSheet2){
-                        Text("SiGN UP HERE")
-                        Button("Submit"){
+                        NavigationStack{
+
+                            ZStack(alignment: .leadingFirstTextBaseline){
+                            Button("< Back to Login page"){
                             self.showSheet2 = false
                         }
-                        .frame(width: 250.0, height: 55.0)
-                        .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
-                        .background(Color(red: 0.38, green: 0.42, blue: 0.22))
-                        .cornerRadius(15)
-                        .shadow(radius: 8)
+                            .frame(width: 250.0, height: 55.0)
+                            .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
+                            .background(Color(red: 0.74, green: 0.42, blue: 0.15))
+                            .cornerRadius(15)
+                            .shadow(radius: 8)}
+                            .padding(.bottom, 100)
+                            TextField("Create your Username", text: $username)
+                                .frame(width: 250.0, height: 55.0)
+                                .foregroundColor(Color.blue)
+                                .border(Color(red: 0.38, green: 0.42, blue: 0.22))
+                                .multilineTextAlignment(TextAlignment .center)
+                                .padding(.bottom, 60)
+                            TextField("Create your Password", text: $password)
+                            .frame(width: 250.0, height: 55.0)
+                            .foregroundColor(Color.blue)
+                            .multilineTextAlignment(TextAlignment .center)
+                            .border(Color(red: 0.38, green: 0.42, blue: 0.22))
+                            .padding(.bottom, 10)
+                            TextField("Confirm your Password", text: $password)
+                            .frame(width: 250.0, height: 55.0)
+                            .foregroundColor(Color.blue)
+                            .multilineTextAlignment(TextAlignment .center)
+                            .border(Color(red: 0.38, green: 0.42, blue: 0.22))
+                            .padding(.bottom, 100)
+                        
+                               
+                            VStack{NavigationLink(destination: homePage()) {
+                                Text("Submit")
+                                    }
+                                    .frame(width: 250.0, height: 55.0)
+                                    .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
+                                    .background(Color(red: 0.74, green: 0.42, blue: 0.15))
+                                    .cornerRadius(15)
+                                    .shadow(radius: 8)}
+                                    .padding(.bottom, 10)
+                            
+                    }
                     }
             }//end of zsstack
             //end of nav stack
             .sheet(isPresented: $showSheet){
                 NavigationStack{
 
-                VStack{ Button("< Back"){
+                    ZStack(alignment: .leadingFirstTextBaseline){
+                    Button("< Back to Login page"){
                     self.showSheet = false
                 }
-                    .frame(width: 60.0, height: 55.0)
+                    .frame(width: 250.0, height: 55.0)
                     .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
-                    .background(Color(red: 0.38, green: 0.42, blue: 0.22))
+                    .background(Color(red: 0.74, green: 0.42, blue: 0.15))
                     .cornerRadius(15)
                     .shadow(radius: 8)}
-                    .padding(.bottom, 240)
+                    .padding(.bottom, 100)
                     TextField("Enter your Username", text: $username)
+                        .frame(width: 250.0, height: 55.0)
+                        .foregroundColor(Color.blue)
+                        .border(Color(red: 0.38, green: 0.42, blue: 0.22))
+                        .multilineTextAlignment(TextAlignment .center)
+                        .padding(.bottom, 60)
+                    TextField("Enter your Password", text: $password)
                     .frame(width: 250.0, height: 55.0)
                     .foregroundColor(Color.blue)
-                    .border(Color.red)
+                    .multilineTextAlignment(TextAlignment .center)
+                    .border(Color(red: 0.38, green: 0.42, blue: 0.22))
+                    .padding(.bottom, 100)
                 
-                        NavigationLink(destination: homePage()) {
-                    Text("Submit")}
-                        .frame(width: 250.0, height: 55.0)
-                        .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
-                        .background(Color(red: 0.38, green: 0.42, blue: 0.22))
-                        .cornerRadius(15)
-                        .shadow(radius: 8)
+                       
+                    VStack{NavigationLink(destination: homePage()) {
+                        Text("Submit")
+                            }
+                            .frame(width: 250.0, height: 55.0)
+                            .foregroundColor(Color(red: 1, green: 0.98, blue: 0.88))
+                            .background(Color(red: 0.74, green: 0.42, blue: 0.15))
+                            .cornerRadius(15)
+                            .shadow(radius: 8)}
+                            .padding(.bottom, 10)
+                    
             }
+//                VStack{
+//                    .sheet(isPresented: $isImagePickerShowing) {
+//                                
+//                            }
         }//end of body
     }//end of struct
 }
