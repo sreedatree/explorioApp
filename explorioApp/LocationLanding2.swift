@@ -28,7 +28,7 @@ struct LocationLanding2: View {
     
     @State private var expanded = true
     var body: some View {
-        //ScrollView {
+        ScrollView {
             NavigationStack {
                 VStack(alignment: .center) {
                     Text("**Welcome to**")
@@ -121,7 +121,7 @@ struct LocationLanding2: View {
                             .cornerRadius(15)
                     }
                 }
-            //}
+            }
         }
     }
     
